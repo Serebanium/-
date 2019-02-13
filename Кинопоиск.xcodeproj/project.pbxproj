@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		3E764D8A2213FBAE00873787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E764D892213FBAE00873787 /* AppDelegate.swift */; };
-		3E764D8C2213FBAE00873787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E764D8B2213FBAE00873787 /* ViewController.swift */; };
 		3E764D8F2213FBAE00873787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E764D8D2213FBAE00873787 /* Main.storyboard */; };
 		3E764D912213FBC400873787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E764D902213FBC400873787 /* Assets.xcassets */; };
 		3E764D942213FBC400873787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E764D922213FBC400873787 /* LaunchScreen.storyboard */; };
+		3E764DA02213FD3A00873787 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E764D9F2213FD3A00873787 /* Films.swift */; };
+		3E764DA22213FFEF00873787 /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E764DA12213FFEF00873787 /* FilmViewController.swift */; };
+		3E764DA4221463DB00873787 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E764DA3221463DA00873787 /* FilmTableViewCell.swift */; };
+		3E764DA6221477E900873787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E764DA5221477E900873787 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E764D862213FBAE00873787 /* Кинопоиск.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Кинопоиск.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E764D892213FBAE00873787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E764D8B2213FBAE00873787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E764D8E2213FBAE00873787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E764D902213FBC400873787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E764D932213FBC400873787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E764D952213FBC400873787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E764D9F2213FD3A00873787 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
+		3E764DA12213FFEF00873787 /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
+		3E764DA3221463DA00873787 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		3E764DA5221477E900873787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		3E764D882213FBAE00873787 /* Кинопоиск */ = {
 			isa = PBXGroup;
 			children = (
-				3E764D892213FBAE00873787 /* AppDelegate.swift */,
-				3E764D8B2213FBAE00873787 /* ViewController.swift */,
-				3E764D8D2213FBAE00873787 /* Main.storyboard */,
-				3E764D902213FBC400873787 /* Assets.xcassets */,
-				3E764D922213FBC400873787 /* LaunchScreen.storyboard */,
+				3E764D9B2213FBE000873787 /* Model */,
+				3E764D9C2213FBF100873787 /* View */,
+				3E764D9D2213FC0000873787 /* Controller */,
+				3E764D9E2213FCA800873787 /* Support */,
 				3E764D952213FBC400873787 /* Info.plist */,
 			);
 			path = "Кинопоиск";
+			sourceTree = "<group>";
+		};
+		3E764D9B2213FBE000873787 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E764D9F2213FD3A00873787 /* Films.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E764D9C2213FBF100873787 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E764D8D2213FBAE00873787 /* Main.storyboard */,
+				3E764D922213FBC400873787 /* LaunchScreen.storyboard */,
+				3E764DA3221463DA00873787 /* FilmTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E764D9D2213FC0000873787 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E764DA12213FFEF00873787 /* FilmViewController.swift */,
+				3E764DA5221477E900873787 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E764D9E2213FCA800873787 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3E764D892213FBAE00873787 /* AppDelegate.swift */,
+				3E764D902213FBC400873787 /* Assets.xcassets */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E764D8C2213FBAE00873787 /* ViewController.swift in Sources */,
+				3E764DA6221477E900873787 /* ViewController.swift in Sources */,
+				3E764DA02213FD3A00873787 /* Films.swift in Sources */,
+				3E764DA4221463DB00873787 /* FilmTableViewCell.swift in Sources */,
+				3E764DA22213FFEF00873787 /* FilmViewController.swift in Sources */,
 				3E764D8A2213FBAE00873787 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
