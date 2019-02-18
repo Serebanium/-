@@ -15,6 +15,7 @@
 		3E764DA22213FFEF00873787 /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E764DA12213FFEF00873787 /* FilmViewController.swift */; };
 		3E764DA4221463DB00873787 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E764DA3221463DA00873787 /* FilmTableViewCell.swift */; };
 		3E764DA6221477E900873787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E764DA5221477E900873787 /* ViewController.swift */; };
+		3E8974F7221AE27300CF01C3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8974F6221AE27300CF01C3 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3E764DA12213FFEF00873787 /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
 		3E764DA3221463DA00873787 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
 		3E764DA5221477E900873787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E8974F6221AE27300CF01C3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				3E764DA12213FFEF00873787 /* FilmViewController.swift */,
 				3E764DA5221477E900873787 /* ViewController.swift */,
+				3E8974F6221AE27300CF01C3 /* ImageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				3E764DA02213FD3A00873787 /* Films.swift in Sources */,
 				3E764DA4221463DB00873787 /* FilmTableViewCell.swift in Sources */,
 				3E764DA22213FFEF00873787 /* FilmViewController.swift in Sources */,
+				3E8974F7221AE27300CF01C3 /* ImageViewController.swift in Sources */,
 				3E764D8A2213FBAE00873787 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

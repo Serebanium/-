@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var photoView: UIImageView!
+   
+    @IBOutlet weak var photoView: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
@@ -26,7 +27,9 @@ class ViewController: UIViewController {
     func updateUI() {
         guard let film = film else { return }
         
-        photoView.image = film.photo
+        photoView.setImage(film.photo, for: .normal)
+       photoView.imageView?.contentMode = .scaleAspectFit
+        
         nameLabel.text = film.name
         dateLabel.text = film.date
         ratingLabel.text = "\(film.rating)"
@@ -43,6 +46,14 @@ class ViewController: UIViewController {
         }
         
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "image" else {return}
+        
+        let controller = segue.destination as! ImageViewController
+        
+        controller.image = film!.photo
     }
 
 }
