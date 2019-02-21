@@ -1,28 +1,14 @@
 //
-//  FilmViewController.swift
+//  FilmViewController+UITadleViewDataSource.swift
 //  Кинопоиск
 //
-//  Created by Сергей Иванов on 13/02/2019.
+//  Created by Сергей Иванов on 21/02/2019.
 //  Copyright © 2019 topMob. All rights reserved.
 //
 
 import UIKit
 
-class FilmViewController: UITableViewController {
-
-    var films = [Film]()
-    
-    override func viewDidLoad() {
-        loadFilms()
-    }
-    
-    func saveFilms() {
-        
-    }
-    
-    func loadFilms() {
-        films = Film.load()
-    }
+extension FilmViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 170
@@ -56,15 +42,5 @@ class FilmViewController: UITableViewController {
                 cell.ratingLabel.textColor = UIColor.black
             }
         }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "info" else {return}
-        
-        let controller = segue.destination as! ViewController
-        
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        
-        controller.film = films[indexPath.row]
     }
 }
