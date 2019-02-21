@@ -33,16 +33,30 @@ class FilmViewController: UITableViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "info" else {return}
         
-        let controller = segue.destination as! ViewController
+        if segue.identifier == "info" {
+            let controller = segue.destination as! ViewController
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            controller.film = films[indexPath.row]
+        }
         
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
         
-        controller.film = films[indexPath.row]
     }
     
     @IBAction func unwind(segue: UIStoryboardSegue) {
+        guard segue.identifier == "save" else { return }
+        guard let controller = segue.source as? EditTableViewController else { return }
+        guard let film = controller.film else { return }
+        
+        if let selectedPath = tableView.indexPathForSelectedRow {
+            films[selectedPath.row] = film
+            tableView.reloadRows(at: [selectedPath], with: .automatic)
+        } else {
+            let indexPath = IndexPath(row: films.count, section: 0)
+            films.append(film)
+            tableView.insertRows(at: [indexPath], with: .automatic)
+        }
+        
     }
     
     }

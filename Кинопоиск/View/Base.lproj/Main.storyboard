@@ -133,20 +133,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ih6-pH-fmn">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aiX-88-6H3">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="204"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBS-MI-VmE">
-                                                <rect key="frame" x="0.0" y="0.0" width="156" height="204"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="182"/>
                                                 <state key="normal" image="1"/>
                                                 <connections>
                                                     <segue destination="y1O-Gx-OAG" kind="show" identifier="image" id="0ri-0J-xvM"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="prW-QY-eiF">
-                                                <rect key="frame" x="164" y="0.0" width="156" height="204"/>
+                                                <rect key="frame" x="164" y="0.0" width="156" height="182"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8p-xr-Sf7">
                                                         <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
@@ -158,19 +158,19 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Клаустрофобы" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36E-Xm-X7o">
-                                                        <rect key="frame" x="0.0" y="49.5" width="156" height="24"/>
+                                                        <rect key="frame" x="0.0" y="44" width="156" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4et-uz-8uE">
-                                                        <rect key="frame" x="0.0" y="93" width="156" height="18"/>
+                                                        <rect key="frame" x="0.0" y="82" width="156" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9ML-nT-U0d">
-                                                        <rect key="frame" x="0.0" y="130.5" width="156" height="24"/>
+                                                        <rect key="frame" x="0.0" y="114" width="156" height="24"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bv-76-HmO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="78" height="24"/>
@@ -187,7 +187,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qX-4z-ftK">
-                                                        <rect key="frame" x="0.0" y="174" width="156" height="30"/>
+                                                        <rect key="frame" x="0.0" y="152" width="156" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="1g3-wJ-twM"/>
                                                         </constraints>
@@ -200,7 +200,7 @@
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Описание" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82z-dF-N6B">
-                                        <rect key="frame" x="0.0" y="212" width="320" height="204"/>
+                                        <rect key="frame" x="0.0" y="190" width="320" height="182"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -217,6 +217,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JCk-x8-HfK"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="w4I-h4-IYB">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="uql-wd-uek">
+                            <connections>
+                                <segue destination="eGr-Ju-kkQ" kind="unwind" unwindAction="unwindWithSegue:" id="J40-Kc-c1m"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="n4a-SL-d4m">
+                            <connections>
+                                <segue destination="jZy-B6-fF1" kind="show" identifier="edit" id="vHS-jc-ip2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="dateLabel" destination="4et-uz-8uE" id="59l-dJ-uPm"/>
                         <outlet property="nameLabel" destination="36E-Xm-X7o" id="519-fL-HGr"/>
@@ -226,13 +240,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coB-lg-2D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="eGr-Ju-kkQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="143" y="-75"/>
         </scene>
         <!--Add-->
         <scene sceneID="wTf-H2-2z6">
             <objects>
-                <tableViewController id="jZy-B6-fF1" sceneMemberID="viewController">
+                <tableViewController id="jZy-B6-fF1" customClass="EditTableViewController" customModule="Кинопоиск" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="47s-eU-es2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,23 +255,31 @@
                         <sections>
                             <tableViewSection headerTitle="Фото" id="fBM-m0-S9w">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="P4A-OR-lNN">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="162" id="P4A-OR-lNN">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P4A-OR-lNN" id="mO0-SJ-T5I">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="161.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWS-Qb-3h8">
-                                                    <rect key="frame" x="16" y="11" width="288" height="22"/>
-                                                    <state key="normal" title="Выберите файл"/>
-                                                </button>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3Y1-dw-hQc">
+                                                    <rect key="frame" x="16" y="11" width="288" height="140"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="none" translatesAutoresizingMaskIntoConstraints="NO" id="e46-mV-Asj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="144" height="140"/>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWS-Qb-3h8">
+                                                            <rect key="frame" x="144" y="0.0" width="144" height="140"/>
+                                                            <state key="normal" title="Выберите файл"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="BWS-Qb-3h8" firstAttribute="trailing" secondItem="mO0-SJ-T5I" secondAttribute="trailingMargin" id="C4t-q9-Rhg"/>
-                                                <constraint firstItem="BWS-Qb-3h8" firstAttribute="bottom" secondItem="mO0-SJ-T5I" secondAttribute="bottomMargin" id="qFg-10-tgf"/>
-                                                <constraint firstItem="BWS-Qb-3h8" firstAttribute="leading" secondItem="mO0-SJ-T5I" secondAttribute="leadingMargin" id="qpX-vd-5nR"/>
-                                                <constraint firstItem="BWS-Qb-3h8" firstAttribute="top" secondItem="mO0-SJ-T5I" secondAttribute="topMargin" id="xFE-g8-UYE"/>
+                                                <constraint firstItem="3Y1-dw-hQc" firstAttribute="leading" secondItem="mO0-SJ-T5I" secondAttribute="leadingMargin" id="0fW-Ex-Dc0"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="3Y1-dw-hQc" secondAttribute="bottom" id="ZCg-Gd-NHq"/>
+                                                <constraint firstItem="3Y1-dw-hQc" firstAttribute="top" secondItem="mO0-SJ-T5I" secondAttribute="topMargin" id="dqp-QO-Err"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3Y1-dw-hQc" secondAttribute="trailing" id="icu-Z7-ojX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -265,7 +288,7 @@
                             <tableViewSection headerTitle="Название" id="qqW-gZ-eY9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="qBA-ZE-Dbu">
-                                        <rect key="frame" x="0.0" y="100" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="218" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qBA-ZE-Dbu" id="eI8-jW-IOh">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -276,6 +299,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldChanged" destination="jZy-B6-fF1" eventType="editingChanged" id="s0I-Je-Vm4"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -291,7 +317,7 @@
                             <tableViewSection headerTitle="Год" id="uYg-20-gWa">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="et2-Pc-OF9">
-                                        <rect key="frame" x="0.0" y="172" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="290" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="et2-Pc-OF9" id="R1h-xy-ShX">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -302,6 +328,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldChanged" destination="jZy-B6-fF1" eventType="editingChanged" id="eqy-6S-fZR"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -317,7 +346,7 @@
                             <tableViewSection headerTitle="Рейтинг" id="OnE-Bc-2gO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="qKg-0a-oWS">
-                                        <rect key="frame" x="0.0" y="244" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="362" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qKg-0a-oWS" id="GlA-c9-jTN">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -328,6 +357,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldChanged" destination="jZy-B6-fF1" eventType="editingChanged" id="gil-zD-jIK"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -343,7 +375,7 @@
                             <tableViewSection headerTitle="Описание" id="bbS-EG-bzn">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="T7F-Zy-0R5">
-                                        <rect key="frame" x="0.0" y="316" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="434" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T7F-Zy-0R5" id="QQb-Uw-fVS">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -354,6 +386,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldChanged" destination="jZy-B6-fF1" eventType="editingChanged" id="0ij-sX-9Yg"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -380,15 +415,23 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="EBO-6s-giD">
                             <connections>
-                                <segue destination="HmD-Da-9Qe" kind="unwind" identifier="Save" unwindAction="unwindWithSegue:" id="HwT-HH-Axw"/>
+                                <segue destination="HmD-Da-9Qe" kind="unwind" identifier="save" unwindAction="unwindWithSegue:" id="HwT-HH-Axw"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dateTextField" destination="vdz-qI-4me" id="HC2-f0-fFA"/>
+                        <outlet property="discriptionTextField" destination="dcn-cb-qX2" id="QRC-eR-D1D"/>
+                        <outlet property="nameTextField" destination="3TS-Tb-MEP" id="5Bn-n6-xTu"/>
+                        <outlet property="photoView" destination="e46-mV-Asj" id="nQa-Zz-AmT"/>
+                        <outlet property="ratingTextField" destination="px3-1N-CBK" id="awy-g6-7II"/>
+                        <outlet property="saveButton" destination="EBO-6s-giD" id="6eJ-lw-6Bi"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JAf-PB-Kn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="HmD-Da-9Qe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="157.5" y="755"/>
+            <point key="canvasLocation" x="143" y="761"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="Y5T-6g-ZIT">
@@ -399,10 +442,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-ok-rhP">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OJL-2g-llA">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -441,7 +484,7 @@
             <objects>
                 <navigationController id="Yfo-r3-EHK" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QSF-YG-Iq6">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -455,5 +498,9 @@
     </scenes>
     <resources>
         <image name="1" width="410" height="600"/>
+        <image name="none" width="225" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jxU-cM-8cD"/>
+    </inferredMetricsTieBreakers>
 </document>

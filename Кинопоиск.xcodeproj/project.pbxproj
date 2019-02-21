@@ -18,6 +18,8 @@
 		3E8974F7221AE27300CF01C3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8974F6221AE27300CF01C3 /* ImageViewController.swift */; };
 		3EE1406B221E8B5400F923A0 /* FilmViewController+UITadleViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1406A221E8B5400F923A0 /* FilmViewController+UITadleViewDataSource.swift */; };
 		3EE1406D221E90F000F923A0 /* FilmViewController+UIViewDeligate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1406C221E90F000F923A0 /* FilmViewController+UIViewDeligate.swift */; };
+		3EE14071221F2C1400F923A0 /* EditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE14070221F2C1400F923A0 /* EditTableViewController.swift */; };
+		3EE14073221F485500F923A0 /* UITextField+textValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE14072221F485500F923A0 /* UITextField+textValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		3E8974F6221AE27300CF01C3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		3EE1406A221E8B5400F923A0 /* FilmViewController+UITadleViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmViewController+UITadleViewDataSource.swift"; sourceTree = "<group>"; };
 		3EE1406C221E90F000F923A0 /* FilmViewController+UIViewDeligate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmViewController+UIViewDeligate.swift"; sourceTree = "<group>"; };
+		3EE14070221F2C1400F923A0 /* EditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewController.swift; sourceTree = "<group>"; };
+		3EE14072221F485500F923A0 /* UITextField+textValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+textValue.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				3E764D9F2213FD3A00873787 /* Films.swift */,
+				3EE14072221F485500F923A0 /* UITextField+textValue.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				3EE1406F221E9C0900F923A0 /* FilmTableViewController */,
 				3E764DA5221477E900873787 /* ViewController.swift */,
 				3E8974F6221AE27300CF01C3 /* ImageViewController.swift */,
+				3EE14070221F2C1400F923A0 /* EditTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,8 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E764DA6221477E900873787 /* ViewController.swift in Sources */,
+				3EE14071221F2C1400F923A0 /* EditTableViewController.swift in Sources */,
 				3EE1406B221E8B5400F923A0 /* FilmViewController+UITadleViewDataSource.swift in Sources */,
 				3E764DA02213FD3A00873787 /* Films.swift in Sources */,
+				3EE14073221F485500F923A0 /* UITextField+textValue.swift in Sources */,
 				3E764DA4221463DB00873787 /* FilmTableViewCell.swift in Sources */,
 				3EE1406D221E90F000F923A0 /* FilmViewController+UIViewDeligate.swift in Sources */,
 				3E764DA22213FFEF00873787 /* FilmViewController.swift in Sources */,

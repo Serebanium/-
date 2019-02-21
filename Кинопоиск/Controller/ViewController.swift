@@ -49,11 +49,20 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "image" else {return}
         
-        let controller = segue.destination as! ImageViewController
+        if segue.identifier == "image" {
+            let controller = segue.destination as! ImageViewController
+            controller.image = film!.photo
+        }
         
-        controller.image = film!.photo
+        if segue.identifier == "edit" {
+            let controller = segue.destination as! EditTableViewController
+            controller.film = film
+            controller.editingFilm = true
+            controller.navigationItem.title = "Edit"
+        }
     }
+    
+    
 
 }
