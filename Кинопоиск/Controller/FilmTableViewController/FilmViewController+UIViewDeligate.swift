@@ -18,11 +18,18 @@ extension FilmViewController {
         
         switch  editingStyle {
         case .insert:
-            let film = films[indexPath.row]
-            films.insert(film, at: indexPath.row)
+           // let film = films[indexPath.row]
+           // films.insert(film, at: indexPath.row)
+            let filmMO = filmsMO[indexPath.row]
+            filmsMO.insert(filmMO, at: indexPath.row)
             tableView.insertRows(at: [indexPath], with: .top)
         case .delete:
-            films.remove(at: indexPath.row)
+            //films.remove(at: indexPath.row)
+            let filmMO = filmsMO.remove(at: indexPath.row)
+            let delegate = AppDelegate.delegate!
+            let context = delegate.context
+            context?.delete(filmMO)
+            delegate.saveContext()
             tableView.deleteRows(at: [indexPath], with: .fade)
         case .none:
             break
@@ -32,8 +39,10 @@ extension FilmViewController {
     
   
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let movedFilm = films.remove(at: sourceIndexPath.row)
-        films.insert(movedFilm, at: destinationIndexPath.row)
+      //  let movedFilm = films.remove(at: sourceIndexPath.row)
+       // films.insert(movedFilm, at: destinationIndexPath.row)
+        let movedFilmMO = filmsMO.remove(at: sourceIndexPath.row)
+        filmsMO.insert(movedFilmMO, at: destinationIndexPath.row)
         tableView.reloadData()
     }
     

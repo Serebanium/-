@@ -271,6 +271,9 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWS-Qb-3h8">
                                                             <rect key="frame" x="144" y="0.0" width="144" height="140"/>
                                                             <state key="normal" title="Выберите файл"/>
+                                                            <connections>
+                                                                <action selector="loadPhotoButtonTaped:" destination="jZy-B6-fF1" eventType="touchUpInside" id="b1H-Nh-5u4"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -356,7 +359,7 @@
                                                     <rect key="frame" x="16" y="11" width="288" height="22"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                     <connections>
                                                         <action selector="textFieldChanged" destination="jZy-B6-fF1" eventType="editingChanged" id="gil-zD-jIK"/>
                                                     </connections>
@@ -382,7 +385,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Кратко опишите о чем этот фильм" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcn-cb-qX2">
-                                                    <rect key="frame" x="16" y="11" width="288" height="22"/>
+                                                    <rect key="frame" x="8" y="8" width="304" height="27.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -501,6 +504,6 @@
         <image name="none" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jxU-cM-8cD"/>
+        <segue reference="vHS-jc-ip2"/>
     </inferredMetricsTieBreakers>
 </document>

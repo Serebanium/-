@@ -10,12 +10,23 @@ import UIKit
 
 class FilmViewController: UITableViewController {
 
-    var films = [Film]()
+    //var films = [Film]()
+    var filmsMO = [FilmMO]() {
+        didSet {
+            
+            AppDelegate.delegate!.saveContext()
+        }
+    }
     var insertMode = false
     
     override func viewDidLoad() {
-        loadFilms()
+        
+        AppDelegate.delegate!.saveContext()
+        if let filmsMO = FilmMO.fetch() {
+            self.filmsMO = filmsMO
+        }
         startUI()
+        
     }
     
     func saveFilms() {
@@ -23,7 +34,7 @@ class FilmViewController: UITableViewController {
     }
     
     func loadFilms() {
-        films = Film.load()
+        
     }
     
     func startUI() {
@@ -37,7 +48,8 @@ class FilmViewController: UITableViewController {
         if segue.identifier == "info" {
             let controller = segue.destination as! ViewController
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            controller.film = films[indexPath.row]
+            let filmMO = filmsMO[indexPath.row]
+            controller.filmMO = filmMO
         }
         
         
@@ -46,16 +58,20 @@ class FilmViewController: UITableViewController {
     @IBAction func unwind(segue: UIStoryboardSegue) {
         guard segue.identifier == "save" else { return }
         guard let controller = segue.source as? EditTableViewController else { return }
-        guard let film = controller.film else { return }
+        guard let filmMO = controller.filmMO else { return }
         
         if let selectedPath = tableView.indexPathForSelectedRow {
-            films[selectedPath.row] = film
+            filmsMO[selectedPath.row] = filmMO
             tableView.reloadRows(at: [selectedPath], with: .automatic)
         } else {
-            let indexPath = IndexPath(row: films.count, section: 0)
-            films.append(film)
+            let indexPath = IndexPath(row: filmsMO.count, section: 0)
+            filmsMO.append(filmMO)
             tableView.insertRows(at: [indexPath], with: .automatic)
+            
+            
         }
+       
+        
         
     }
     

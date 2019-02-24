@@ -18,27 +18,27 @@ class ViewController: UIViewController {
     @IBOutlet weak var notesView: UITextView!
     
     
-    var film: Film?
+    var filmMO: FilmMO?
     
     override func viewDidLoad() {
         updateUI()
     }
     
     func updateUI() {
-        guard let film = film else { return }
+        guard let filmMO = filmMO else { return }
         
-        photoView.setImage(film.photo, for: .normal)
+        photoView.setImage(UIImage(data: filmMO.photo!), for: .normal)
        photoView.imageView?.contentMode = .scaleAspectFit
         
-        nameLabel.text = film.name
-        dateLabel.text = film.date
-        ratingLabel.text = "\(film.rating)"
-        notesView.text = film.notes
+        nameLabel.text = filmMO.name
+        dateLabel.text = filmMO.date
+        ratingLabel.text = "\(filmMO.rating)"
+        notesView.text = filmMO.notes
         
-        if film.rating > 7.0 {
+        if filmMO.rating > 7.0 {
             ratingLabel.textColor = UIColor.green
         } else {
-            if film.rating < 5.0 {
+            if filmMO.rating < 5.0 {
                 ratingLabel.textColor = UIColor.red
             } else {
                 ratingLabel.textColor = UIColor.black
@@ -52,12 +52,12 @@ class ViewController: UIViewController {
         
         if segue.identifier == "image" {
             let controller = segue.destination as! ImageViewController
-            controller.image = film!.photo
+            controller.image = UIImage(data: filmMO!.photo!)
         }
         
         if segue.identifier == "edit" {
             let controller = segue.destination as! EditTableViewController
-            controller.film = film
+            controller.filmMO = filmMO
             controller.editingFilm = true
             controller.navigationItem.title = "Edit"
         }

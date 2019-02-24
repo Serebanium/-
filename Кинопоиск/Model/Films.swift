@@ -6,7 +6,7 @@
 //  Copyright © 2019 topMob. All rights reserved.
 //
 import UIKit
-
+import Foundation
 
 struct Film {
     var name: String
@@ -14,6 +14,8 @@ struct Film {
     var notes: String
     var rating: Float
     var date: String
+    
+  
     
     static func load() -> [Film] {
         return [

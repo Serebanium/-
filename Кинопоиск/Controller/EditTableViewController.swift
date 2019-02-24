@@ -8,9 +8,9 @@
 
 import UIKit
 
-class EditTableViewController: UITableViewController {
+class EditTableViewController: UITableViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    var film: Film?
+    var filmMO: FilmMO?
     var editingFilm: Bool?
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
@@ -27,12 +27,12 @@ class EditTableViewController: UITableViewController {
         
         updateButton()
         
-        if let film = film {
-            photoView.image = film.photo
-            nameTextField.text = film.name
-            dateTextField.text = film.date
-            ratingTextField.text = "\(film.rating)"
-            discriptionTextField.text = film.notes
+        if let filmMO = filmMO {
+            photoView.image = UIImage(data: filmMO.photo!)
+            nameTextField.text = filmMO.name
+            dateTextField.text = filmMO.date
+            ratingTextField.text = "\(filmMO.rating)"
+            discriptionTextField.text = filmMO.notes
         }
      
     }
@@ -46,14 +46,27 @@ class EditTableViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let rt = Float(ratingTextField.textValue) ?? 0
-        film = Film(
-            name: nameTextField.textValue,
-            photo: photoView.image!,
-            notes: discriptionTextField.textValue,
-            rating: rt,
-            date: dateTextField.textValue)
+       
+        
+        let film = Film(name: nameTextField.textValue, photo: photoView.image!, notes: discriptionTextField.textValue, rating: rt, date: dateTextField.textValue)
+        
+        filmMO = FilmMO(film)
+   }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            photoView.image = image
+        }
+        self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func loadPhotoButtonTaped(_ sender: UIButton) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        image.allowsEditing = false
+        self.present(image, animated: true)
+    }
     
     @IBAction func textFieldChanged() {
         updateButton()
