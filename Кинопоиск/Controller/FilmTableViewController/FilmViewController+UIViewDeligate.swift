@@ -22,6 +22,8 @@ extension FilmViewController {
            // films.insert(film, at: indexPath.row)
             let filmMO = filmsMO[indexPath.row]
             filmsMO.insert(filmMO, at: indexPath.row)
+            let delegate = AppDelegate.delegate!
+            delegate.saveContext()
             tableView.insertRows(at: [indexPath], with: .top)
         case .delete:
             //films.remove(at: indexPath.row)

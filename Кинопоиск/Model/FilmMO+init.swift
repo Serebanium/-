@@ -37,4 +37,13 @@ extension FilmMO {
         }
         return films
     }
+    
+    func removeFromCoreDataAndSaveContext() {
+    guard let delegate = AppDelegate.delegate else { return }
+    
+    let context = delegate.context
+    
+    context?.delete(self)
+    delegate.saveContext()
+    }
 }

@@ -61,6 +61,7 @@ class FilmViewController: UITableViewController {
         guard let filmMO = controller.filmMO else { return }
         
         if let selectedPath = tableView.indexPathForSelectedRow {
+            filmsMO[selectedPath.row].removeFromCoreDataAndSaveContext()
             filmsMO[selectedPath.row] = filmMO
             tableView.reloadRows(at: [selectedPath], with: .automatic)
         } else {
